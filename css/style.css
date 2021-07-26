@@ -1,4 +1,161 @@
-body {
-    background-color: black;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(133deg, rgb(33, 152, 231) 0%, rgb(13, 74, 185) 14%, rgba(0, 212, 255, 1) 100%);
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.btn-submit {
+    width: fit-content;
+    border: none;
+    font-family: Raleway;
+    border-radius: 16px;
+    padding: 12px 24px;
+    border: 2px solid #ffffff;
+    color: black;
+    font-size: 24px;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(133deg, rgb(33, 152, 231) 0%, rgb(13, 74, 185) 14%, rgba(0, 212, 255, 1) 100%);
+    ;
     color: white;
+}
+
+input[type=text],
+input[type=date],
+.btn-submit:focus {
+    outline: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-title {
+    margin: auto 0;
+}
+
+.check-button {
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+}
+
+.trash-button {
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo-button {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+}
+
+.check-button:focus,
+.trash-button {
+    outline: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper .container {
+        width: 100%;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
 }
